@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-image: url("../img/background2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1{
+    color: #F2F0FA;
+}
+.destaque{
+    color: #F5D300;
+}
+p{
+    color: #A9A5BA;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #080711cc;
+    position: fixed;
+    width: 100%;
+}
+main{
+    padding-top: 80px;
+}
+.navbar a {
+    color: #F2F0FA;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+    font-size: 1.2rem
+}
+.navbar a:hover {
+    color: #00D9F5;
+    text-shadow:
+        0 0 5px #00D9F5,
+        0 0 12px rgba(0, 217, 245, 0.6);
+}
+.navbar ul {
+    display: flex;     
+    gap: 30px;          
+    list-style: none;   
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #F5D300;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(245, 211, 0, 0.5);
+}
+#text p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+#text{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 4px solid transparent;
+    border-image: linear-gradient(90deg, #8b06f8, #22D3EE) 1;
+    box-shadow:
+    0 0 5px #ee22bb,
+    0 0 15px #9414b4,
+    0 0 30px #8f0d8f,
+    0 0 50px rgba(34, 211, 238, 0.7);
+    max-width: 750px;
+    padding: 10px 30px;
+}
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 30px;
+}
+#avatar img{
+    width: 420px;
+    height: auto;
+    display: block;
+    border-radius: 10%;
+    border: 4px solid #22D3EE;
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.5)
+}
+#avatar{
+    width: 50px 100px;
+}
+#proj {
+    padding: 50px;
+}
+#proj h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;     
+    background-color: rgba(5, 30, 59, 0.7);
+    border: 4px solid #22D3EE;                   
+}
+.card h2 {
+    color: #F5D300;
+}
+.card p {
+    color: #F2F0FA;
+}
+
+.links a {
+    color: #00D9F5;
+}
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+.filtros button {
+    background: transparent;
+    color: #F2F0FA;
+    border: 2px solid #22D3EE;
+    padding: 8px 22px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.filtros button:hover,
+.filtros button.ativo {
+    background: #22D3EE;
+    color: #080711;
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.7);
+}
+#proj-title {
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/title_proj.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover,contain;
+    border-top:#00D9F5 4px solid;
+    border-bottom:#00D9F5 4px solid;
+}
+#contact {
+    text-align: center;
+    padding: 80px 30px 30px;
+    background-color: rgba(8, 7, 17, 0.85);
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, #8b06f8, #22D3EE) 1;
+}
+#contact h1 {
+    margin-bottom: 16px;
+    text-shadow: 0 0 12px #F5D300;
+}
+#contact p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.contact-links a {
+    padding: 12px 28px;
+    color: #F5D300;
+    text-decoration: none;
+    border: 2px solid #F5D300;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.contact-links a:hover {
+    background: #F5D300;
+    color: #080711;
+    box-shadow: 0 0 20px rgba(245, 211, 0, 0.7);
+}
+
+#contact .copy {
+    font-size: 0.9rem;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(169, 165, 186, 0.25);
+}
